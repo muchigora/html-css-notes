@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+<!---->
+    <style>
+        .parent-div{
+            border: 1px solid black;
+            margin-top: 15px;
+        }
+
+
+        .use-transition-property{
+            width: 150px;
+            height: 150px;
+            background-color: blueviolet;
+            margin-left: 15px;
+            transition-property: width height;
+        }
+        .use-transition-property:hover{
+            width: 300px;
+            height: 100px;
+        }
+
+        .use-transition-duration{
+            width: 100px;
+            height: 200px;
+            background-color: burlywood;
+            margin-left: 15px;
+            transition-property: width height;
+            transition-duration: 2s;
+        }
+        .use-transition-duration:hover{
+            width: 400px;
+            height: 100px;
+        }
+        .use-transition-timing-function{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s;
+            transition-timing-function: ease-in;
+        }
+        .use-transition-timing-function:hover{
+            width: 400px;
+        }
+
+        .use-transition-delay{
+            width: 150px;
+            height: 150px;
+            background-color:aqua;
+            transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s;
+        }
+        .use-transition-delay:hover{
+            width: 450px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+            Transisions
+        </h1>
+    </header>
+<!---->
+    <div class="parent-div">
+        <h3>transition-property</h3>
+        <p>
+            transition property specifies the name of CSS property the transition will take effect on. <br>
+            CSS properties are like width, height, font-size, color, etc will be changed by the transition.
+            <strong>NOTE</strong>: Always specify the transition-duration property, otherwise the duration is 0, and the transition will have no effect. <br>
+            the transition effect will start when the specified CSS property changes e.g., when a user hover over an element.
+
+            <div class="use-transition-property">
+                <p>xoxo</p>
+
+            </div>
+        </p>
+    </div>
+ 
+ <!---->   
+    <div class="parent-div">
+        <h3>transition-duration</h3>
+        <p>
+            transition-duration property specifies the duration of transition-duration. <br>
+            this property will specify how many second(s), milliseconds that a trabsition will take to complete.
+        </p>
+        <div class="use-transition-duration"></div>
+    </div>
+    
+<!---->
+    <div class="parent-div">
+        <h3>transition-timing-function</h3>
+        <p>
+            transition-timing-function property specifies the pseed curve of the transition effect. <br>
+            allows a tranistioneffect to change its value speed over its duration.
+        </p>
+        <div class="use-transition-timing-function"></div>
+    </div>
+    
+<!---->
+    <div class="parent-div">
+        <h3>transition-delay</h3>
+        <p>
+            transition-delay property specifies the delay of transition in seconds or milliseconds. <br>            
+        </p>
+
+        <div class="use-transition-delay"></div>
+    </div>
+    
+</body>
+</html>

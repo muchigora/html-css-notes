@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transision Properties</title>
+
+    <style>
+        table {
+            margin-top: 15px;
+            border: 1 px solid black;
+            text-align: left;
+        }
+        th, td {
+            padding-left: 15px;            
+        }
+
+        .div-with-transition{
+            width: 100px;
+            height: 150px;
+            border: 1px solid black;
+            background-color: red;
+        }
+        .div-with-transition:hover{
+            width: 250px;
+            font-size: 25px;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>
+            Transision Properties
+        </h1>
+    </header>
+
+    <div>
+        <p>the word <em>tranistion</em> is short hand for:</p>
+        <ul>
+            <li>transision-<em>property</em></li>
+            <li>transision-<em>duration</em></li>
+            <li>transision-<em>timing-function</em></li>
+            <li>transision-<em>delay</em></li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Property values</h3>
+        <div style="border: 1px solid; background-color: beige;">
+            <h4>syntax:</h4>
+            <p>transision-property: none | all | property | initial | inherit</p>
+        </div>
+        
+        <table>
+            <tr>
+                <th>
+                    value:
+                </th>
+                <th>
+                    description:
+                </th>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>No property will get transition effect</td>
+            </tr>
+            <tr>
+                <td>all</td>
+                <td>Default value. All properties will get transition effects</td>
+            </tr>
+            <tr>
+                <td>property</td>
+                <td>Will define a comma seperated list of CSS names the transistions effect is for</td>
+            </tr>
+            <tr>
+                <td>initial</td>
+                <td>Sets this property to its default value</td>
+            </tr>
+            <tr>
+                <td>inherit</td>
+                <td>Inherits the proeprty from its parents  element</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div>
+        <h2>example</h2>
+        <p>
+            Hover over a <code>&lt;div&gt;</code> element, and change the width with a smooth transition effect:
+        </p>
+
+        <div class="div-with-transition">
+            <p>div width will increase from 100px to 250px when hover</p>
+        </div>
+
+        <p>
+            
+        </p>
+    </div>
+
+
+</body>
+</html>

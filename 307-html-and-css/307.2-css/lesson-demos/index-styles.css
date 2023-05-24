@@ -1,0 +1,40 @@
+
+body{
+    background-color: rgb(183, 202, 196);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+header{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+    background-color:rgb(18, 18, 53);
+    /* height: 100px; */
+    padding: 50px;
+}
+section{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid rgb(18, 18, 53);
+    
+}
+
+p{
+    color:brown;
+    font-size: 14px;
+}
+
+footer{
+    background-color: rgb(18, 18, 53);
+    margin-top: 2px;
+    border-top: 2px solid rgb(238, 15, 15);
+    border-bottom: 2px solid rgb(238, 15, 15);
+    height: 150px;
+}
+footer+p{
+    color: white;
+}
+

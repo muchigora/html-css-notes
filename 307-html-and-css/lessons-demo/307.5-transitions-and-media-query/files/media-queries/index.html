@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        
+        .wrapper {
+            overflow: auto;
+        }
+        body {
+            background-color: black;
+                color: white;            
+        }
+        #leftsidebar{
+            float: none;
+            width: auto;
+        }
+
+        #menulist {
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        .menuitem{
+            background-color: #CDF0F6;
+            border: 1px solid #d4d4d4;
+            border-radius: 4px;
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+
+        }
+
+       @media screen and (min-width:480px){
+            body {
+                background-color: aquamarine;
+                color: black;  
+            } 
+            .menuitem{
+                background-color: antiquewhite;
+            }       
+       }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <!--Nav Bar-->
+        <div class="wrapper">
+            <div id="leftsidebar">
+            <ul id="menulist">
+                <li class="menuitem">Menu-item 1</li>
+                <li class="menuitem">Menu-item 2</li>
+                <li class="menuitem">Menu-item 3</li>
+                <li class="menuitem">Menu-item 4</li>
+                <li class="menuitem">Menu-item 5</li>
+            </ul>
+            </div>
+
+
+            <!---->
+        <h1>Introduction to Media Queries</h1>
+
+        <p>
+            Resize the browser window to see the effect!
+        </p>
+        
+        <p>
+            The media query will only apply if the media type is screen and the viewport is 480px wide or wider.
+        </p>
+    
+    </div>
+</body>
+</html>

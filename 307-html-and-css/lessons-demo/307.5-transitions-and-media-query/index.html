@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transisions & Media Queries</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            }
+            
+         .div-with-transition{
+            width: 100px;
+            height: 150px;
+            border: 1px solid black;
+            background-color: red;
+        }
+        .div-with-transition:hover{
+            width: 250px;
+            font-size: 25px;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Transisions and Media Queries</h1>
+    </header>
+
+    <div>
+        <h2>example</h2>
+        <p>
+            Hover over a <code>&lt;div&gt;</code> element, and change the width with a smooth transition effect:
+        </p>
+
+        <div class="div-with-transition">
+            <p>div width will increase from 100px to 250px when hover</p>
+        </div>
+
+        <p>
+            
+        </p>
+    </div>
+
+    <div>
+        <ol>
+            <li><a href="./files/transisions.html">Transisions</a></li>
+            <li><a href="./files/properties.html">Transistion Properties</a></li>
+            <li><a href="./files/examples.html">Transistion Examples</a></li>
+            <li><a href="./files/shorthand.html">Transision Shorthand</a></li>
+            <li><a href="./files/transform.html">Transform</a></li>
+            <li><a href="./files/responsive-design.html">Responsive Design Principles</a></li>
+            <li><a href="./files/viewport.html">Viewport</a></li>
+            <li><a href="./files/media-query.html">Media Query</a></li>
+            <li><a href="./files/device-sizes.html">Breakpoints and Target Device Sizes</a></li>
+        </ol>
+    </div>
+
+    <div>
+        <p> The transition-property property specifies the name of the CSS          property the transition effect is for (the transition effect will start when the specified CSS property changes).<br>
+            <strong>NOTE:</strong> Always specify the transition-duration property, otherwise the duration is 0, and the transition will have no effect.<br>
+            CSS transitions provide a way to create gradual transitions between the values of CSS properties. These transitions can be controlled by specifying their timing function, duration, and other attributes. <br>
+            For example, if you change the color of an element from white to black, usually the change is instantaneous. With CSS transitions enabled, changes occur over a period of time, which can be customized. In the example case, we would transition from white, through shades of grey, and eventually to black. <br>
+            You can also animate things like size, position, and a number of other properties. For a full list of animatable CSS properties
+        </p>
+    </div>
+    
+</body>
+</html>

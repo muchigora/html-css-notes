@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+        div.a{
+            width: 150px;
+            height: 80px;
+            border: 1px solid black;
+            background-color: yellow;
+            -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+        }
+
+        .b{
+            width: 150px;
+            height: 80px;
+            background-color: yellowgreen;
+            border: 1px solid black;
+            transform: skewY(20deg);
+        }
+
+        .c{
+            width: 150px;
+            height: 80px;
+            background-color: violet;
+            transform: scaleY(1.5);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Transform
+        </h1>
+    </header>
+    <main>
+        <p>
+            Applies 2D or 3D transformations to an element. Allows user to rotate, scale, move, skew etc and element.
+        </p>
+
+        <div>
+            <h2>transform: rotate(20deg):</h2>
+            <div class="a">
+                <p>
+                    div class a
+                </p>
+            </div>
+
+            <h2>transform: skewY(20deg):</h2>
+            <div class="b">
+                <p>
+                    div class b
+                </p>
+            </div>
+
+            <h2>transform: scaleY(1.5):</h2>
+            <div class="c">
+                <p>
+                    div class c
+                </p>
+            </div>    
+        </div>
+    </main>
+    
+</body>
+</html>
